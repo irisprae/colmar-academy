@@ -4,10 +4,9 @@
   }
 
   body {
-    width: 1280 px;
+    max-width: 1280px;
     margin: 0 auto;
     font-family: 'League Spartan', sans-serif;
-    font-weight: lighter;
   }
   
   /* Navigation Bar*/
@@ -18,7 +17,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    font-weight: lighter;
   }
 
   .nav-left {
@@ -40,32 +39,247 @@
 
   /* section 2 */
   .banner-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    padding: 32px 0;
+    background-color: #D8D8D8;
   }
 
   .banner-picture {
     width: 60%;
-
+    padding: 0 24px;
   }
 
-  .banner-container img {
-    
+  .banner-picture img {
+    width: 100%;
   }
 
   .banner-text {
-    width: 40%;
+    width: 30%;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner-text-inside h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #4A4A4A;
+  }
+
+  .banner-text-inside p {
+    margin: 40px 0;
+    font-size: 30px;
+    font-weight: 400;
+    color: #4A4A4A;
+  }
+
+  .banner-text-inside button {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    width: 100%;
+    padding: 10px 0;;
+    border: none;
+    background-color: #454545;
+    color: #FFF;
+  }
+
+  /* section 3 */
+  .section3 {
+    display: flex;
+    width: 100%;
+    margin: 32px 0;
+    color: #4A4A4A;
+  }
+
+  .section3Left {
+    width: 66%;
+
+    padding: 0 24px;
+  }
+
+  .section3Left img {
+    width: 100%;
 
   }
 
+  .section3LeftText h2 {
+    margin: 32px 0;
+    font-size: 50px;
+  }
 
-  /* section 3 */
+  .section3LeftText p {
+    margin: 32px 0;
+    font-size: 22px;
+    color: #878787;
+  }
 
-  
+  .section3Right {
+    width: 40%;
+  }
+
+  .section3RightBox {
+    width: 100%;
+    display: flex;
+  }
+
+  .section3RightBox:hover {
+    background-color: #D8D8D8;
+  }
+
+  .section3RightBox img {
+    width: 40%;
+    margin: 16px;
+  }
+
+  .section3RightBoxText {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section3RightBoxText h3 {
+    font-size: 25px;
+  }
+
+  .section3RightBoxText p {
+    margin: 8px 0; 
+    color: #878787;
+  }
+
+  .section3RightBoxText span {
+    color: #6AA1DF;
+    font-size: 18px;
+  }
+
   /* section 4 */
 
+  .startLearning {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    background-color: #EAEBEC;
+    font-size: 50px;
+    color: #4A4A4A;
+  
+  }
 
+  .section4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 72px;
+    background-color: #EAEBEC;
+    color: #4A4A4A;
+  }
+
+  .section4 h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .courses {
+    width: 30.5%;
+    margin-bottom: 32px;
+    margin: 16px;
+
+  }
+
+  .courses img {
+    width: 100%;
+  }
+
+
+  .coursesDetails {
+    padding: 16px;
+    background-color: #FFF;
+    height: 28%;
+
+  }
+
+  .coursesDetails h3 {
+    font-size: 30px;
+  }
+
+  .coursesDetails h4 {
+    margin: 8px 0;
+    font-weight: 400;
+    color: #878787;
+  }
+
+  .coursesDetails p {
+    font-weight: 400;
+    color: #878787;
+  }
+
+  /* Section 5 */
+
+  .thesisExhibit {
+    margin: 32px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #4A4A4A;
+
+  }
+
+  .thesis {
+    display: flex;
+    width: 100%;
+    color: #4A4A4A;
+  }
+
+  .thesisLeft {
+    width: 60%;
+  }
+
+  .section3Left video {
+    width: 100%;
+  }
+
+  .section3LeftText h3 {
+    margin-top: 24px;
+    font-size: 30px;
+  }
+
+  .thesisRight {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
   /* footer */
+
+  hr {
+    border: 1px solid #EAEBEC;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 24px 72px 24px;
+    color: #878787;
+  }
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0 auto;
+    font-family: 'League Spartan', sans-serif;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mobileNav {
+    height: 64px;
+  }
+
+}
 
 
 
