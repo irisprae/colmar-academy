@@ -171,6 +171,7 @@
   .section4 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 32px 72px;
     background-color: #EAEBEC;
     color: #4A4A4A;
@@ -182,10 +183,9 @@
   }
 
   .courses {
-    width: 30.5%;
+    width: 30%;
     margin-bottom: 32px;
     margin: 16px;
-
   }
 
   .courses img {
@@ -196,7 +196,7 @@
   .coursesDetails {
     padding: 16px;
     background-color: #FFF;
-    height: 28%;
+    height: 35%;
 
   }
 
@@ -338,6 +338,10 @@
   .section4Mobile {
     display: none;
   }
+
+  .coursesMobile {
+    display: none;
+  }
 }
 
 @media only screen and (orientation: landscape) {
@@ -349,6 +353,10 @@
     display: none;
   }
   .section4Mobile {
+    display: none;
+  }
+
+  .coursesMobile {
     display: none;
   }
 }
@@ -401,6 +409,7 @@
 
   .banner-text-inside {
     width: 100%;
+
   }
 
   .banner-text-inside button {
@@ -414,6 +423,33 @@
 
   .section3Right {
     width: 100%;
+  }
+
+  .section3RightBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .section3RightBox:last-child {
+    margin-bottom: 0;
+  }
+
+  .section3RightBox img {
+    width: 95%;
+  }
+
+  .coursesDesktop {
+    display: none;
+  }
+
+  .coursesMobile {
+    display: block;
+  }
+
+  .section3RightBoxText {
+    margin-left: 16px;
   }
 
   .startLearning {
@@ -453,6 +489,15 @@
   }
 
   hr {
+    display: none;
+  }
+
+  footer {
+    display: block;
+    margin: 16px 0 32px 16px;
+  }
+
+  .termsPrivacy {
     display: none;
   }
 }
