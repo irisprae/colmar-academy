@@ -185,7 +185,7 @@
   .courses {
     width: 30%;
     margin-bottom: 32px;
-    margin: 16px;
+    margin: 16px 7px;
   }
 
   .courses img {
